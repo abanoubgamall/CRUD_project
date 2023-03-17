@@ -1,0 +1,65 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+
+
+
+</head>
+
+<body>
+
+
+    <div class="container py-2">
+
+
+        <div class="form-group">
+            <label class="px-2 my-2"> product name</label>
+            <input onkeyup="validate(this.value)" id="name" class="form-control">
+            <small>Must start with a capital letter and min 4 letters and max 9 letters</small>
+
+        </div>
+        <div class="form-group">
+            <label class="px-2 my-2"> price</label>
+            <input id="price" class="form-control">
+            <small>must fill it out </small>
+
+        </div>
+        <div class="form-group">
+            <label class="px-2 my-2"> cat</label>
+            <input id="cat" class="  form-control">
+            <small> must fill it out </small>
+
+
+        </div>
+        <button id="addbtn" onclick="add()" class="btn btn-danger py-2 my-2 float-end">add</button>
+        <div class="clearfix"></div>
+        <div class="container-fluid py-2">
+
+            <h2 class="text-center">Our Products</h2>
+            <!--  <input class="w-75 form-control m-auto" type="text" id="searchInput" onkeyup="search()" placeholder="Search for products...">-->
+            <input class="w-75 form-control m-auto" type="text" onkeyup="search(this.value)"
+                placeholder="Search for products...">
+
+
+            <div id="mohem" class="row m-4">
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+
+</body>
+
+
+</html>
